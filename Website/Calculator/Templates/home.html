@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Calculator</h1>
+    <form action="operation" method="post">
+
+        {% csrf_token %}
+        Enter 1 number     : <input type="text" name="num1"><br><br>
+        Enter 2 number     : <input type="text" name="num2"><br><br>
+        Enter the operator : <input type="text" name="op"><br><br>
+        <input type="submit">
+
+    </form>
+
+{% endblock %}
